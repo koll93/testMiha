@@ -2,6 +2,7 @@
   <input v-model="valInput"/>
   <button v-for="button in [1,2,3]" :key="button" @click="setNumber(button)">{{ button }}</button>
   <button v-for="button in ['+','-','=']" :key="button" @click="setNumber(button)">{{ button }}</button>
+  <hr/>
   <Selector/>
 </template>
 
