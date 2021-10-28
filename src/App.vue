@@ -2,19 +2,19 @@
   <input v-model="valInput"/>
   <button v-for="button in [1,2,3]" :key="button" @click="setNumber(button)">{{ button }}</button>
   <button v-for="button in ['+','-','=']" :key="button" @click="setNumber(button)">{{ button }}</button>
-
+  <Selector/>
 </template>
 
 
 <script>
 
 // import Counter from "./components/Counter.vue";
-// import ToDo from "./components/ToDo.vue";
+import Selector from "./components/Selector";
 
 export default {
   components: {
     // Counter,
-    // ToDo,
+    Selector,
   },
   data: function () {
     return {
